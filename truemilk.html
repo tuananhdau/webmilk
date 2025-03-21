@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            margin-right: 10px;
+        }
+        .search-bar {
+            display: flex;
+            flex: 1;
+            margin: 0 50px;
+            background: #f1f1f1;
+            border-radius: 30px;
+            overflow: hidden;
+            align-items: center;
+        }
+
+        .search-bar input {
+            border: none;
+            background: transparent;
+            padding: 10px 15px;
+            flex: 1;
+            outline: none;
+        }
+
+        .search-bar i {
+            margin-left: 15px;
+            color: #555;
+        }
+
+        .filter-btn {
+            background: #b32222;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .filter-btn i {
+            margin-right: 5px;
+        }
+
+        .user-cart {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-cart i {
+            font-size: 20px;
+            margin-right: 5px;
+            color: #b32222;
+        }
+
+        .user {
+            margin-right: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+        }
+
+        .cart {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 20px;
+            padding: 10px 0;
+            background: #fff;
+            font-weight: bold;
+            height: 60px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+
+        .menu a:hover {
+            color: #b32222;
+            border-bottom: 2px solid #a01717;
+        }
+        .menu-section {
+        max-width: 1200px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .menu-section h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .menu-item {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.3s ease;
+    }
+
+    .menu-item:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+    }
+
+    .menu-item img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .menu-item h3 {
+        font-size: 16px;
+        margin: 10px 0 5px 0;
+        color: #333;
+    }
+
+    .menu-item .price {
+        color: #b32222;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .menu-item button {
+        background: #b32222;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .menu-item button:hover {
+        background: #a01717;
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"> <img src="./img/Screenshot_2025-03-17_193826-removebg-preview.png" alt="Logo"></a> 
+            </div>
+
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Tìm kiếm món ăn...">
+                <button class="filter-btn">
+                    <i class="fas fa-filter"></i> Lọc
+                </button>
+            </div>
+
+            <div class="user-cart">
+                <i class="fas fa-user"></i>
+                <div class="user">
+                    <span>Đăng nhập / Đăng ký<br>Tài khoản <i class="fas fa-caret-down"></i></span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>Giỏ hàng</span>
+                </div>
+            </div>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Trang Chủ</a>
+            <a href="vinamilk.html">Vinamilk</a>
+            <a href="nutifood.html">Nutifood</a>
+            <a href="truemilk.html">TH True Milk</a>
+            <a href="#">Dutch Lady</a>
+            <a href="#">Nestlé</a>
+            <a href="#">Liên Hệ</a>
+        </nav>
+    </header>
+    <section class="menu-section">
+        <h2>KHÁM PHÁ THỰC ĐƠN CỦA CHÚNG TÔI</h2>
+        <div class="menu-grid">
+    
+            <!-- Item 1 -->
+            <div class="menu-item">
+                <img src="https://www.thtruemart.vn/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/n/g/nguyen_chat_trai.png" alt="">
+                <h3>Lốc Sữa tươi tiệt trùng TH true MILK nguyên chất 110 ml x 4 hộp KM</h3>
+                <p class="price">25.000<span>đ</span></p>
+                <button><i class="fas fa-cart-plus"></i> ĐẶT MÓN</button>
+            </div>
+    
+            <!-- Item 2 -->
+            <div class="menu-item">
+                <img src="https://www.thtruemart.vn/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/0/-/0-02-06-3983f526f990b4b7c60765933aa6463ab27fe702d60b3981ee572a77b2b22586_ab39ce7618240aff.png" alt="Sản phẩm sữa uống dinh dưỡng GrowPLUS+ Vị Dâu Sữa Hộp 180ml - thùng 24 hộp">
+                <h3>Nước Uống Sữa Trái Cây Mãng Cầu Tự Nhiên TH true JUICE milk</h3>
+                <p class="price">78.000<span>đ</span></p>
+                <button><i class="fas fa-cart-plus"></i> ĐẶT MÓN</button>
+            </div>
+    
+            <!-- Item 3 -->
+            <div class="menu-item">
+                <img src="https://www.thtruemart.vn/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/n/u/nuoc-uong-sua-trai-cay-viet-quat-th-true-juice.jpg" alt="Sữa Bột Nutifood GrowPLUS+ Suy Dinh Dưỡng trên 1 tuổi lon 900g- Suy Dinh Dưỡng">
+                <h3>Nước uống sữa trái cây Việt Quất Tự Nhiên TH true JUICE milk 300ml</h3>
+                <p class="price">15.000 <span>đ</span></p>
+                <button><i class="fas fa-cart-plus"></i> ĐẶT MÓN</button>
+            </div>
+    
+            <!-- Item 4 -->
+            <div class="menu-item">
+                <img src="https://www.thtruemart.vn/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/l/o/loc_cam_png_1_1.png" alt="Sữa Bột Pha Sẵn Värna Colostrum Chai 237ml">
+                <h3>Lốc Thức Uống Sữa Trái Cây Cam Tự Nhiên TH true JUICE milk MISTORI 110ml</h3>
+                <p class="price">55.000 <span>đ</span></p>
+                <button><i class="fas fa-cart-plus"></i> ĐẶT MÓN</button>
+            </div>
+            </div>
+    
+        </div>
+    </section>
+
+</body>
+
+</html>
