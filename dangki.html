@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Kí</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(https://img.freepik.com/premium-photo/milk-ripple-splash-background-3d-rendering_36845-261.jpg?uid=R192179016&ga=GA1.1.118575099.1742221969&semt=ais_keywords_boost);
+        }
+        .container{
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
+        .dangnhap{
+            width: 450px;
+            height: 600px;
+
+            box-shadow: 0 0 10px grey;
+            background-color: white;
+           
+        }
+        img{
+        width: 300px;
+        padding-left: 150px;
+        }
+        h2{
+            text-align: center;
+        }
+        form{
+            line-height: 33px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        button{
+            background-color: aqua;
+           border-radius: 10px;
+           width: 100px;
+           height: 30px;
+           
+        }
+        button:hover{
+            background-color: #2f55ee;
+        }
+        input{
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+        }
+        p a{
+            text-decoration: none;
+        }
+        p a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dangnhap">
+            <div class="logo">
+                <img src="./img/Screenshot_2025-03-17_193826-removebg-preview.png" alt="Logo">
+            </div>
+            <form>
+            <h2>Đăng Kí</h2>
+            <p>Tên Đăng Nhập</p>
+            <input class="tk" type="text" placeholder="kí tự chứa chữ và số" size="55px" height="20px">
+            <p>Gmail</p>
+            <input type="text" placeholder="VD: abc@gmail.com" size="55px" height="20px">
+            <p>Mật Khẩu</p>
+            <input type="password" name="mk" placeholder="Vui Lòng Nhập Mật Khẩu" size="55px" height="20px"><br>
+            <p>Xác Nhận Lại Mật Khẩu</p>
+            <input type="password" placeholder="Vui Lòng xác nhận lại Mật Khẩu" size="55px" height="20px">
+            <button type="Text">Đăng Kí</button>
+            <p>Bạn Đã Có Tài Khoản? <a href="dk_dn.html">Đăng Nhập</a></p>
+            </form>
+            </div>
+    </div>
+</body>
+</html>
